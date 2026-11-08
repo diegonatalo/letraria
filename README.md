@@ -1,6 +1,7 @@
+<!-- Arquivo gerado pelo readme-kit. Não edite aqui: altere docs/readme/ e rode "readme-kit build". -->
 <div align="center">
 
-<img src="docs/assets/banner.svg" alt="Letraria: Obras e formas desenhadas com letras. github.com/diegonatalo/Letraria. Stack: Next.js 15, React 19, TypeScript, Tailwind CSS 4" width="100%" />
+<img src="docs/assets/banner.svg" alt="Letraria: Obras e formas desenhadas com letras. github.com/diegonatalo/Letraria. Stack: Next.js 15, React 19, TypeScript 5, Tailwind CSS 4" width="100%" />
 
 <br />
 
@@ -11,9 +12,10 @@
 
 ![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React_19-20232a?style=flat-square&logo=react&logoColor=61dafb)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=flat-square&logo=typescript&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript_5-3178c6?style=flat-square&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-06b6d4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Canvas](https://img.shields.io/badge/arte_em_canvas-sem_bibliotecas-fcd34d?style=flat-square)
+![arte em canvas](https://img.shields.io/badge/arte_em_canvas-sem_bibliotecas-fcd34d?style=flat-square)
+![Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-16a34a?style=flat-square)
 
 </div>
 
@@ -21,7 +23,7 @@
 
 <div align="center">
 
-<img src="docs/assets/h-sobre.svg" alt="01 · SOBRE — Sobre o projeto" width="100%" />
+<img src="docs/assets/h-sobre.svg" alt="01 · SOBRE: Sobre o projeto" width="100%" />
 
 </div>
 
@@ -32,13 +34,13 @@ Arte ASCII colorida e animada: pinturas que se revelam com zoom, formas que se d
 
 <div align="center">
 
-<img src="docs/assets/h-demo.svg" alt="02 · DEMO — Demonstração" width="100%" />
+<img src="docs/assets/h-demo.svg" alt="02 · DEMO: Demonstração" width="100%" />
 
 </div>
 
 <div align="center">
 
-<img src="docs/assets/shot-01.svg" alt="Galeria do Letraria: título LETRARIA em letras douradas e cartões com miniaturas em ASCII de A Noite Estrelada, Os Girassóis e O Beijo" width="100%" />
+<img src="docs/assets/shot-01.svg" alt="Galeria do Letraria: título LETRARIA em letras douradas e cartões com miniaturas em ASCII" width="100%" />
 
 <br />
 
@@ -46,7 +48,7 @@ Arte ASCII colorida e animada: pinturas que se revelam com zoom, formas que se d
 
 <br />
 
-<img src="docs/assets/shot-03.svg" alt="Buquê de flores em letras coloridas: hortênsia, girassol, rosa, tulipa, lírio e margaridas sobre fundo escuro" width="100%" />
+<img src="docs/assets/shot-03.svg" alt="Buquê de flores em letras coloridas sobre fundo escuro" width="100%" />
 
 </div>
 
@@ -54,7 +56,7 @@ Arte ASCII colorida e animada: pinturas que se revelam com zoom, formas que se d
 
 <div align="center">
 
-<img src="docs/assets/h-func.svg" alt="03 · FUNCIONALIDADES — O que dá para fazer" width="100%" />
+<img src="docs/assets/h-func.svg" alt="03 · FUNCIONALIDADES: O que dá para fazer" width="100%" />
 
 </div>
 
@@ -80,13 +82,13 @@ Arte ASCII colorida e animada: pinturas que se revelam com zoom, formas que se d
 
 <div align="center">
 
-<img src="docs/assets/h-stack.svg" alt="04 · STACK — Stack" width="100%" />
+<img src="docs/assets/h-stack.svg" alt="04 · STACK: Stack" width="100%" />
 
 </div>
 
 <div align="center">
 
-<img src="docs/assets/stack.svg" alt="Stack: Next.js 15, React 19, TypeScript, Tailwind CSS 4, arte em canvas · sem bibliotecas" width="100%" />
+<img src="docs/assets/stack.svg" alt="Stack: Next.js 15, React 19, TypeScript 5, Tailwind CSS 4, arte em canvas · sem bibliotecas" width="100%" />
 
 </div>
 
@@ -94,7 +96,7 @@ Arte ASCII colorida e animada: pinturas que se revelam com zoom, formas que se d
 
 <div align="center">
 
-<img src="docs/assets/h-run.svg" alt="05 · COMO RODAR — Rodando localmente" width="100%" />
+<img src="docs/assets/h-run.svg" alt="05 · COMO RODAR: Rodando localmente" width="100%" />
 
 </div>
 
@@ -117,7 +119,7 @@ npm run dev     # http://localhost:3000
 
 <div align="center">
 
-<img src="docs/assets/h-estrutura.svg" alt="06 · ESTRUTURA — Estrutura" width="100%" />
+<img src="docs/assets/h-estrutura.svg" alt="06 · ESTRUTURA: Estrutura" width="100%" />
 
 </div>
 
@@ -147,22 +149,11 @@ docs/img/
 └── banner.png              banner deste README
 ```
 
-<details>
-<summary><b>Como adicionar uma nova obra</b></summary>
-
-1. Baixe uma versão reduzida (de 1280 a 1920 px de largura) de uma obra em domínio público, por exemplo na [Wikimedia Commons](https://commons.wikimedia.org), e uma miniatura de 480 px.
-2. Salve as duas em `public/obras/<slug>.jpg` e `public/obras/<slug>-thumb.jpg`.
-3. Adicione a obra à lista `WORKS` em `lib/works.ts`, com `about` contendo três textos, nesta ordem: contexto, mensagem e curiosidade. Confira os fatos em fontes confiáveis antes de escrever.
-
-A página, a galeria, o painel "Sobre a obra", os metadados e o sitemap saem dessa lista.
-
-</details>
-
 <br />
 
 <div align="center">
 
-<img src="docs/assets/h-mais.svg" alt="07 · MAIS — Mais informações" width="100%" />
+<img src="docs/assets/h-mais.svg" alt="07 · MAIS: Mais informações" width="100%" />
 
 </div>
 
@@ -179,6 +170,14 @@ A página, a galeria, o painel "Sobre a obra", os metadados e o sitemap saem des
 
 A pintura é desenhada na GPU com WebGL2 puro (`lib/glArt.ts`), o que mantém o zoom fluido; a moldura dourada e as miniaturas usam `<canvas>` 2D. Se o navegador não tiver WebGL2, o desenho cai para o canvas 2D, mais pesado. Não há biblioteca de gráficos.
 
+### 🖼️ Como adicionar uma nova obra
+
+1. Baixe uma versão reduzida (de 1280 a 1920 px de largura) de uma obra em domínio público, por exemplo na [Wikimedia Commons](https://commons.wikimedia.org), e uma miniatura de 480 px.
+2. Salve as duas em `public/obras/<slug>.jpg` e `public/obras/<slug>-thumb.jpg`.
+3. Adicione a obra à lista `WORKS` em `lib/works.ts`, com `about` contendo três textos, nesta ordem: contexto, mensagem e curiosidade. Confira os fatos em fontes confiáveis antes de escrever.
+
+A página, a galeria, o painel "Sobre a obra", os metadados e o sitemap saem dessa lista.
+
 ### 🌐 Deploy
 
 O projeto foi pensado para a [Vercel](https://vercel.com) e não precisa de configuração extra nem de variáveis de ambiente.
@@ -193,25 +192,26 @@ O projeto foi pensado para a [Vercel](https://vercel.com) e não precisa de conf
 - [ ] Testar o desempenho em celulares mais simples (o zoom agora roda na GPU, mas só foi medido em um computador).
 - [ ] Testes automatizados. Hoje não há nenhum.
 
-### Créditos
+### 📄 Créditos e licença
 
-- Obras em domínio público, em versões reduzidas da [Wikimedia Commons](https://commons.wikimedia.org). O link de cada arquivo de origem está em `lib/works.ts`:
+- Obras em domínio público, em versões reduzidas da [Wikimedia Commons](https://commons.wikimedia.org). O link de cada arquivo de origem está em `lib/works.ts`.
   *A Noite Estrelada* e *Os Girassóis* (Van Gogh), *O Beijo* (Klimt), *A Grande Onda de Kanagawa* (Hokusai), *Moça com Brinco de Pérola* (Vermeer), *O Grito* (Munch), *Mona Lisa* (Leonardo da Vinci), *O Nascimento de Vênus* (Botticelli), *Impressão, nascer do sol* (Monet), *A Criação de Adão* (Michelangelo) e *O Caminhante sobre o Mar de Névoa* (Friedrich).
 - O código foi escrito com apoio do Claude Code.
+- Distribuído sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE).
 
 <br />
 
 <div align="center">
 
-<img src="docs/assets/h-autor.svg" alt="08 · AUTOR — Autor" width="100%" />
+<img src="docs/assets/h-autor.svg" alt="08 · AUTOR: Autor" width="100%" />
 
 </div>
 
 <div align="center">
 
-<a href="https://diegonatalo.dev"><img src="docs/assets/btn-author-1.svg" alt="Portfólio ↗" height="46" /></a>
-<a href="https://www.linkedin.com/in/diegonatalo/"><img src="docs/assets/btn-author-2.svg" alt="LinkedIn ↗" height="46" /></a>
-<a href="https://github.com/diegonatalo"><img src="docs/assets/btn-author-3.svg" alt="GitHub ↗" height="46" /></a>
+<a href="https://diegonatalo.dev"><img src="docs/assets/btn-portfolio.svg" alt="Portfólio ↗" height="46" /></a>
+<a href="https://www.linkedin.com/in/diegonatalo/"><img src="docs/assets/btn-linkedin.svg" alt="LinkedIn ↗" height="46" /></a>
+<a href="https://github.com/diegonatalo"><img src="docs/assets/btn-github.svg" alt="GitHub ↗" height="46" /></a>
 
 </div>
 

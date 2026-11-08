@@ -1,0 +1,100 @@
+{
+  "name": "Letraria",
+  "repo": "Letraria",
+  "tagline": "Obras e formas desenhadas com letras.",
+  "urls": {
+    "demo": "https://letraria.vercel.app"
+  },
+  "stack": [
+    {
+      "pkg": "next"
+    },
+    {
+      "pkg": "react"
+    },
+    {
+      "pkg": "typescript"
+    },
+    {
+      "pkg": "tailwindcss"
+    },
+    "arte em canvas · sem bibliotecas"
+  ],
+  "badges_extra": [
+    {
+      "label": "arte em canvas",
+      "message": "sem bibliotecas",
+      "color": "fcd34d"
+    }
+  ],
+  "banner": {
+    "shot": {
+      "file": "docs/screenshots/galeria.png",
+      "title": "letraria.vercel.app"
+    },
+    "chips": 4
+  },
+  "demo": {
+    "layout": "stack",
+    "shots": [
+      {
+        "file": "docs/screenshots/galeria.png",
+        "title": "Galeria",
+        "alt": "Galeria do Letraria: título LETRARIA em letras douradas e cartões com miniaturas em ASCII"
+      },
+      {
+        "file": "docs/screenshots/noite-estrelada.png",
+        "title": "A Noite Estrelada",
+        "alt": "A Noite Estrelada, de Van Gogh, desenhada com letras coloridas dentro de uma moldura dourada em ASCII"
+      },
+      {
+        "file": "docs/screenshots/buque.png",
+        "title": "Buquê",
+        "alt": "Buquê de flores em letras coloridas sobre fundo escuro"
+      }
+    ]
+  },
+  "features": [
+    {
+      "title": "Galeria",
+      "desc": "A página inicial reúne as obras em cartões com miniaturas em ASCII, que cintilam ao passar o mouse. Clique em um para abrir a animação em tela cheia."
+    },
+    {
+      "title": "Onze obras clássicas",
+      "desc": "*A Noite Estrelada*, *Os Girassóis*, *O Beijo*, *A Grande Onda de Kanagawa*, *Moça com Brinco de Pérola*, *O Grito*, *Mona Lisa*, *O Nascimento de Vênus*, *Impressão, nascer do sol*, *A Criação de Adão* e *O Caminhante sobre o Mar de Névoa* viram texto colorido, com moldura dourada também em ASCII. O zoom começa no centro e se afasta até mostrar a obra inteira."
+    },
+    {
+      "title": "Sobre a obra",
+      "desc": "Quando o zoom termina, o botão \"Sobre a obra\" abre um painel com três partes: o contexto em que a obra foi feita, a mensagem que ela passa e uma curiosidade. Fecha com o ✕, clicando fora ou com Esc. O painel traz também o link do arquivo de origem na Wikimedia Commons."
+    },
+    {
+      "title": "Coração de palavras",
+      "desc": "Um contorno de coração se desenha de baixo para cima, com uma ponta de brilho, e depois se preenche a partir do centro com \"TE AMO\", \"CARINHO\", \"ABRAÇO\" e outras palavras. O miolo é bordô e a borda rosa-clara. Pronto, o coração pulsa e as letras se afastam um pouco do centro a cada batimento."
+    },
+    {
+      "title": "Buquê de lírios",
+      "desc": "Em `/lirios`, oito lírios (vermelho, rosa, dourado, creme e vinho) são gerados como nuvem de pontos 3D e desenhados em letras coloridas. Os talos crescem de baixo para cima, os botões se abrem um a um e depois o buquê balança. O mouse (ou o toque) afasta as letras num raio de 80 px e elas voltam com mola."
+    },
+    {
+      "title": "Buquê de flores",
+      "desc": "Em `/buque`, uma hortênsia azul, um girassol, uma rosa vermelha, uma tulipa roxa e um lírio branco, dispostos numa cúpula, com margaridas coloridas e pequenas de talos curtos agrupadas no meio do buquê, entre as flores grandes, e folhas largas e serrilhadas. Mesma animação dos lírios, mas sem o efeito do mouse; as flores se abrem uma a uma."
+    },
+    {
+      "title": "Navegação entre obras",
+      "desc": "Na página de cada obra, as setas levam à anterior e à próxima. Há também botões para repetir o zoom e para tela cheia."
+    },
+    {
+      "title": "Repetir a animação",
+      "desc": "Clique na tela ou no botão \"Repetir\" para rever o zoom ou o desenho do coração."
+    },
+    {
+      "title": "Movimento reduzido",
+      "desc": "Se o seu sistema pede menos animação, as obras aparecem já prontas, sem zoom nem desenho progressivo."
+    }
+  ],
+  "credits": [
+    "Obras em domínio público, em versões reduzidas da [Wikimedia Commons](https://commons.wikimedia.org). O link de cada arquivo de origem está em `lib/works.ts`.\n  *A Noite Estrelada* e *Os Girassóis* (Van Gogh), *O Beijo* (Klimt), *A Grande Onda de Kanagawa* (Hokusai), *Moça com Brinco de Pérola* (Vermeer), *O Grito* (Munch), *Mona Lisa* (Leonardo da Vinci), *O Nascimento de Vênus* (Botticelli), *Impressão, nascer do sol* (Monet), *A Criação de Adão* (Michelangelo) e *O Caminhante sobre o Mar de Névoa* (Friedrich).",
+    "O código foi escrito com apoio do Claude Code."
+  ],
+  "footer": "Feito com 💛 para quem gosta de ver arte sendo escrita."
+}
