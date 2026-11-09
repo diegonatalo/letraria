@@ -1,6 +1,6 @@
 "use client";
 
-import BouquetCanvas from "@/components/BouquetCanvas";
+import BouquetCanvas from "@/components/bouquet-canvas";
 import { buildMixed, poseMixed } from "@/lib/mixed";
 
 const GRID = { div: 190, min: 4, max: 4 };

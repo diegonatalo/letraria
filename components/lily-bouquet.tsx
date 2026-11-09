@@ -1,6 +1,6 @@
 "use client";
 
-import BouquetCanvas from "@/components/BouquetCanvas";
+import BouquetCanvas from "@/components/bouquet-canvas";
 import { buildBouquet, poseFlower } from "@/lib/lily";
 
 const ENGINE = { build: buildBouquet, poseFlower };

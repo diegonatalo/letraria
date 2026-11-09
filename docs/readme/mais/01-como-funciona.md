@@ -9,4 +9,4 @@
 | **Moldura** | Quatro anéis de caracteres dourados (`#@`, `~o`, `=-`, `'.`), mais claros no canto superior esquerdo e mais escuros no inferior direito. |
 | **Coração** | A forma vem da equação clássica do coração. As células de borda formam o contorno e o interior recebe as palavras, embaralhadas e deslocadas linha a linha. O preenchimento e o pulso seguem a distância ao centro, medida em relação à borda em cada direção, e por isso chegam juntos a todas as bordas. |
 
-A pintura é desenhada na GPU com WebGL2 puro (`lib/glArt.ts`), o que mantém o zoom fluido; a moldura dourada e as miniaturas usam `<canvas>` 2D. Se o navegador não tiver WebGL2, o desenho cai para o canvas 2D, mais pesado. Não há biblioteca de gráficos.
+A pintura é desenhada na GPU com WebGL2 puro (`lib/gl-art.ts`), o que mantém o zoom fluido; a moldura dourada e as miniaturas usam `<canvas>` 2D. Se o navegador não tiver WebGL2, o desenho cai para o canvas 2D, mais pesado. Não há biblioteca de gráficos.

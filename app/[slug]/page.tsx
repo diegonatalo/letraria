@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import AsciiArtwork from "@/components/AsciiArtwork";
-import BackLink from "@/components/BackLink";
+import AsciiArtwork from "@/components/ascii-artwork";
+import BackLink from "@/components/back-link";
 import { WORKS, getWork, workImage, workThumb } from "@/lib/works";
 
 export const dynamicParams = false;

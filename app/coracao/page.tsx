@@ -1,5 +1,5 @@
-import BackLink from "@/components/BackLink";
-import AsciiHeart from "@/components/AsciiHeart";
+import BackLink from "@/components/back-link";
+import AsciiHeart from "@/components/ascii-heart";
 
 const TITLE = "Coração · Letraria";
 const DESCRIPTION = "Um coração que se desenha em contorno e se preenche com palavras de amor e carinho.";

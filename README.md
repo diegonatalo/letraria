@@ -1,7 +1,7 @@
 <!-- Arquivo gerado pelo readme-kit. Não edite aqui: altere docs/readme/ e rode "readme-kit build". -->
 <div align="center">
 
-<img src="docs/assets/banner.svg" alt="Letraria: Obras e formas desenhadas com letras. github.com/diegonatalo/letraria. Stack: Next.js 16, React 19, TypeScript 6, Tailwind CSS 4" width="100%" />
+<img src="docs/assets/banner.svg" alt="Letraria: Obras e formas desenhadas com letras. github.com/diegonatalo/letraria. Stack: Next.js 16, React 19, TypeScript 5, Tailwind CSS 4" width="100%" />
 
 <br />
 
@@ -12,7 +12,7 @@
 
 ![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React_19-20232a?style=flat-square&logo=react&logoColor=61dafb)
-![TypeScript](https://img.shields.io/badge/TypeScript_6-3178c6?style=flat-square&logo=typescript&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript_5-3178c6?style=flat-square&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-06b6d4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![arte em canvas](https://img.shields.io/badge/arte_em_canvas-sem_bibliotecas-fcd34d?style=flat-square)
 ![Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-16a34a?style=flat-square)
@@ -88,7 +88,7 @@ Arte ASCII colorida e animada: pinturas que se revelam com zoom, formas que se d
 
 <div align="center">
 
-<img src="docs/assets/stack.svg" alt="Stack: Next.js 16, React 19, TypeScript 6, Tailwind CSS 4, arte em canvas · sem bibliotecas" width="100%" />
+<img src="docs/assets/stack.svg" alt="Stack: Next.js 16, React 19, TypeScript 5, Tailwind CSS 4, arte em canvas · sem bibliotecas" width="100%" />
 
 </div>
 
@@ -134,15 +134,15 @@ app/
 ├── robots.ts               /robots.txt
 └── sitemap.ts              /sitemap.xml
 components/
-├── AsciiArtwork.tsx        renderizador de qualquer pintura, com zoom, moldura e painel "Sobre a obra"
-├── AsciiHeart.tsx          contorno e preenchimento do coração
-├── AsciiThumb.tsx          miniatura em ASCII dos cartões da galeria
-├── AsciiLogo.tsx           logotipo "LETRARIA" em caracteres
-├── AsciiRain.tsx           chuva de letras do fundo da galeria
-└── BackLink.tsx            botão "← Galeria"
+├── ascii-artwork.tsx        renderizador de qualquer pintura, com zoom, moldura e painel "Sobre a obra"
+├── ascii-heart.tsx          contorno e preenchimento do coração
+├── ascii-thumb.tsx          miniatura em ASCII dos cartões da galeria
+├── ascii-logo.tsx           logotipo "LETRARIA" em caracteres
+├── ascii-rain.tsx           chuva de letras do fundo da galeria
+└── back-link.tsx            botão "← Galeria"
 lib/
 ├── ascii.ts                escala de caracteres e fonte compartilhadas
-├── glArt.ts                renderizador WebGL2 da pintura (shader + atlas de glifos)
+├── gl-art.ts                renderizador WebGL2 da pintura (shader + atlas de glifos)
 └── works.ts                lista das obras (título, artista, ano, fonte e textos do painel "Sobre a obra")
 public/obras/               imagens reduzidas e miniaturas das obras
 docs/img/
@@ -168,7 +168,7 @@ docs/img/
 | **Moldura** | Quatro anéis de caracteres dourados (`#@`, `~o`, `=-`, `'.`), mais claros no canto superior esquerdo e mais escuros no inferior direito. |
 | **Coração** | A forma vem da equação clássica do coração. As células de borda formam o contorno e o interior recebe as palavras, embaralhadas e deslocadas linha a linha. O preenchimento e o pulso seguem a distância ao centro, medida em relação à borda em cada direção, e por isso chegam juntos a todas as bordas. |
 
-A pintura é desenhada na GPU com WebGL2 puro (`lib/glArt.ts`), o que mantém o zoom fluido; a moldura dourada e as miniaturas usam `<canvas>` 2D. Se o navegador não tiver WebGL2, o desenho cai para o canvas 2D, mais pesado. Não há biblioteca de gráficos.
+A pintura é desenhada na GPU com WebGL2 puro (`lib/gl-art.ts`), o que mantém o zoom fluido; a moldura dourada e as miniaturas usam `<canvas>` 2D. Se o navegador não tiver WebGL2, o desenho cai para o canvas 2D, mais pesado. Não há biblioteca de gráficos.
 
 ### 🖼️ Como adicionar uma nova obra
 

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { FONT, RAMP, clamp } from "@/lib/ascii";
-import { createGlArt } from "@/lib/glArt";
+import { createGlArt } from "@/lib/gl-art";
 
 const MAX_ROWS = 130; // limita a grade em obras verticais
 

@@ -1,7 +1,7 @@
 import Link from "next/link";
-import AsciiLogo from "@/components/AsciiLogo";
-import AsciiRain from "@/components/AsciiRain";
-import AsciiThumb from "@/components/AsciiThumb";
+import AsciiLogo from "@/components/ascii-logo";
+import AsciiRain from "@/components/ascii-rain";
+import AsciiThumb from "@/components/ascii-thumb";
 import { WORKS, workThumb } from "@/lib/works";
 
 // Miniatura em texto do coração, gerada na hora da renderização.
