@@ -157,12 +157,12 @@ const FOCALS: Focal[] = [
 
 const SUNFLOWERS = [sunflower(SUN.x, SUN.y, SUN.z, 1.15, SUN.yaw, 0.4)];
 const ROSES = [rose(ROSE.x, ROSE.y, ROSE.z, 1.3, ROSE.yaw, 0.0)];
-const LILIES: LilySpec[] = [{ x: LILY_POS.x, y: LILY_POS.y, z: LILY_POS.z, size: 1.1, yaw: LILY_POS.yaw, pitch: 0.3, roll: 0.5, pal: "branco" }];
+const LILIES: LilySpec[] = [{ x: LILY_POS.x, y: LILY_POS.y, z: LILY_POS.z, size: 1.1, yaw: LILY_POS.yaw, pitch: 0.3, roll: 0.5, pal: "white" }];
 const TULIPS: LilySpec[] = [
-  { x: TULIP_POS.x, y: TULIP_POS.y, z: TULIP_POS.z, size: 1.35, yaw: TULIP_POS.yaw, pitch: 1.15, roll: 0.0, pal: "roxo", ls: 1.0, maxOpen: 0.2, round: true },
+  { x: TULIP_POS.x, y: TULIP_POS.y, z: TULIP_POS.z, size: 1.35, yaw: TULIP_POS.yaw, pitch: 1.15, roll: 0.0, pal: "purple", ls: 1.0, maxOpen: 0.2, round: true },
 ];
 const HEADS: HeadSpec[] = [
-  { x: HEAD_POS.x, y: HEAD_POS.y, z: HEAD_POS.z, size: 1.05, yaw: HEAD_POS.yaw, pitch: HEAD_POS.pitch, roll: 0.5, flat: 0.88, pal: "azul" },
+  { x: HEAD_POS.x, y: HEAD_POS.y, z: HEAD_POS.z, size: 1.05, yaw: HEAD_POS.yaw, pitch: HEAD_POS.pitch, roll: 0.5, flat: 0.88, pal: "blue" },
 ];
 
 const DAISY_COUNT = 10;

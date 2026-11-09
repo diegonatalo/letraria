@@ -10,13 +10,13 @@ interface Palette {
 }
 
 const PALETTES = {
-  azul: { a: [74, 118, 236], b: [140, 176, 250] },
-  celeste: { a: [96, 170, 244], b: [168, 214, 252] },
-  cobalto: { a: [40, 90, 214], b: [92, 142, 240] },
-  pervinca: { a: [112, 128, 232], b: [168, 178, 248] },
-  marinho: { a: [26, 52, 164], b: [70, 100, 214] },
-  gelo: { a: [190, 220, 248], b: [232, 244, 254] },
-  turquesa: { a: [52, 150, 220], b: [110, 200, 240] },
+  blue: { a: [74, 118, 236], b: [140, 176, 250] },
+  skyBlue: { a: [96, 170, 244], b: [168, 214, 252] },
+  cobalt: { a: [40, 90, 214], b: [92, 142, 240] },
+  periwinkle: { a: [112, 128, 232], b: [168, 178, 248] },
+  navy: { a: [26, 52, 164], b: [70, 100, 214] },
+  ice: { a: [190, 220, 248], b: [232, 244, 254] },
+  turquoise: { a: [52, 150, 220], b: [110, 200, 240] },
 } satisfies Record<string, Palette>;
 
 // Cabeças esféricas (mopheads): posição, raio relativo e pose.
@@ -25,13 +25,13 @@ export interface HeadSpec {
 }
 
 const SPECS: HeadSpec[] = [
-  { x: 0.0, y: 0.82, z: 0.05, size: 1.1, yaw: 0.0, pitch: 0.3, roll: 0.2, flat: 1.0, pal: "cobalto" },
-  { x: -0.314, y: 0.7, z: 0.1, size: 1.0, yaw: -0.5, pitch: 0.2, roll: 1.0, flat: 0.85, pal: "pervinca" },
-  { x: 0.325, y: 0.72, z: 0.08, size: 1.0, yaw: 0.5, pitch: 0.25, roll: 0.5, flat: 0.9, pal: "celeste" },
-  { x: -0.112, y: 0.54, z: 0.24, size: 0.95, yaw: -0.2, pitch: 0.1, roll: 2.0, flat: 0.8, pal: "gelo" },
-  { x: 0.179, y: 0.52, z: 0.27, size: 0.9, yaw: 0.25, pitch: 0.1, roll: 0.8, flat: 0.85, pal: "marinho" },
-  { x: -0.482, y: 0.5, z: 0.0, size: 0.82, yaw: -0.9, pitch: 0.1, roll: 0.3, flat: 0.9, pal: "turquesa" },
-  { x: 0.493, y: 0.52, z: 0.0, size: 0.82, yaw: 0.9, pitch: 0.15, roll: 1.4, flat: 0.8, pal: "pervinca" },
+  { x: 0.0, y: 0.82, z: 0.05, size: 1.1, yaw: 0.0, pitch: 0.3, roll: 0.2, flat: 1.0, pal: "cobalt" },
+  { x: -0.314, y: 0.7, z: 0.1, size: 1.0, yaw: -0.5, pitch: 0.2, roll: 1.0, flat: 0.85, pal: "periwinkle" },
+  { x: 0.325, y: 0.72, z: 0.08, size: 1.0, yaw: 0.5, pitch: 0.25, roll: 0.5, flat: 0.9, pal: "skyBlue" },
+  { x: -0.112, y: 0.54, z: 0.24, size: 0.95, yaw: -0.2, pitch: 0.1, roll: 2.0, flat: 0.8, pal: "ice" },
+  { x: 0.179, y: 0.52, z: 0.27, size: 0.9, yaw: 0.25, pitch: 0.1, roll: 0.8, flat: 0.85, pal: "navy" },
+  { x: -0.482, y: 0.5, z: 0.0, size: 0.82, yaw: -0.9, pitch: 0.1, roll: 0.3, flat: 0.9, pal: "turquoise" },
+  { x: 0.493, y: 0.52, z: 0.0, size: 0.82, yaw: 0.9, pitch: 0.15, roll: 1.4, flat: 0.8, pal: "periwinkle" },
 ];
 
 const HEAD_R = 0.125; // raio da esfera de florzinhas

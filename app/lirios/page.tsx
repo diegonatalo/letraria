@@ -12,7 +12,7 @@ export const metadata = {
   twitter: { title: TITLE, description: DESCRIPTION },
 };
 
-export default function Lirios() {
+export default function Lilies() {
   return (
     <main className="relative h-screen w-screen overflow-hidden bg-[#050505]">
       <BackLink tone="rose" />

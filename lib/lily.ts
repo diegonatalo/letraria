@@ -10,13 +10,13 @@ interface Palette {
 }
 
 export const PALETTES = {
-  vermelho: { base: [208, 22, 38], center: [255, 190, 80], spots: true },
-  rosa: { base: [226, 52, 140], center: [255, 214, 168], spots: true },
-  dourado: { base: [247, 178, 22], center: [255, 244, 170], spots: true },
-  creme: { base: [252, 220, 186], center: [255, 246, 176], spots: false },
-  vinho: { base: [120, 14, 48], center: [236, 150, 72], spots: true },
-  branco: { base: [250, 250, 246], center: [226, 236, 150], spots: false },
-  roxo: { base: [110, 42, 168], center: [178, 124, 216], spots: false },
+  red: { base: [208, 22, 38], center: [255, 190, 80], spots: true },
+  pink: { base: [226, 52, 140], center: [255, 214, 168], spots: true },
+  gold: { base: [247, 178, 22], center: [255, 244, 170], spots: true },
+  cream: { base: [252, 220, 186], center: [255, 246, 176], spots: false },
+  wine: { base: [120, 14, 48], center: [236, 150, 72], spots: true },
+  white: { base: [250, 250, 246], center: [226, 236, 150], spots: false },
+  purple: { base: [110, 42, 168], center: [178, 124, 216], spots: false },
 } satisfies Record<string, Palette>;
 
 // Posição (x, y, z do modelo; y para cima, z para o espectador) e pose de cada lírio.
@@ -28,14 +28,14 @@ export interface LilySpec {
 }
 
 const SPECS: LilySpec[] = [
-  { x: 0.02, y: 0.88, z: 0.05, size: 1.0, yaw: 0.05, pitch: 0.45, roll: 0.2, pal: "vermelho" },
-  { x: -0.31, y: 0.76, z: 0.1, size: 0.95, yaw: -0.55, pitch: 0.25, roll: 1.0, pal: "rosa" },
-  { x: 0.31, y: 0.78, z: 0.08, size: 0.95, yaw: 0.55, pitch: 0.3, roll: 0.5, pal: "dourado" },
-  { x: -0.12, y: 0.62, z: 0.22, size: 0.88, yaw: -0.2, pitch: 0.1, roll: 2.0, pal: "creme" },
-  { x: 0.17, y: 0.61, z: 0.24, size: 0.85, yaw: 0.25, pitch: 0.12, roll: 0.8, pal: "vinho" },
-  { x: -0.46, y: 0.54, z: 0.0, size: 0.8, yaw: -1.0, pitch: 0.1, roll: 0.3, pal: "vermelho" },
-  { x: 0.47, y: 0.56, z: 0.0, size: 0.8, yaw: 1.0, pitch: 0.2, roll: 1.4, pal: "rosa" },
-  { x: 0.0, y: 0.46, z: 0.32, size: 0.72, yaw: 0.1, pitch: -0.05, roll: 0.0, pal: "dourado" },
+  { x: 0.02, y: 0.88, z: 0.05, size: 1.0, yaw: 0.05, pitch: 0.45, roll: 0.2, pal: "red" },
+  { x: -0.31, y: 0.76, z: 0.1, size: 0.95, yaw: -0.55, pitch: 0.25, roll: 1.0, pal: "pink" },
+  { x: 0.31, y: 0.78, z: 0.08, size: 0.95, yaw: 0.55, pitch: 0.3, roll: 0.5, pal: "gold" },
+  { x: -0.12, y: 0.62, z: 0.22, size: 0.88, yaw: -0.2, pitch: 0.1, roll: 2.0, pal: "cream" },
+  { x: 0.17, y: 0.61, z: 0.24, size: 0.85, yaw: 0.25, pitch: 0.12, roll: 0.8, pal: "wine" },
+  { x: -0.46, y: 0.54, z: 0.0, size: 0.8, yaw: -1.0, pitch: 0.1, roll: 0.3, pal: "red" },
+  { x: 0.47, y: 0.56, z: 0.0, size: 0.8, yaw: 1.0, pitch: 0.2, roll: 1.4, pal: "pink" },
+  { x: 0.0, y: 0.46, z: 0.32, size: 0.72, yaw: 0.1, pitch: -0.05, roll: 0.0, pal: "gold" },
 ];
 
 export const CAM = 3.4; // distância da câmera (perspectiva)

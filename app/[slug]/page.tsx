@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-export default async function ObraPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function WorkPage({ params }: { params: Promise<{ slug: string }> }) {
   const work = getWork((await params).slug);
   if (!work) notFound();
 

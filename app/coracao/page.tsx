@@ -12,7 +12,7 @@ export const metadata = {
   twitter: { title: TITLE, description: DESCRIPTION },
 };
 
-export default function Coracao() {
+export default function Heart() {
   return (
     <main className="relative h-screen w-screen overflow-hidden bg-[#07020a]">
       <BackLink tone="rose" />

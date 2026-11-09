@@ -109,7 +109,7 @@ function Corners({ tone = "text-gold/70" }: { tone?: string }) {
   );
 }
 
-export default function Galeria() {
+export default function Gallery() {
   return (
     <div className="relative min-h-screen overflow-hidden">
       <AsciiRain className="pointer-events-none absolute inset-x-0 top-0 h-[28rem] w-full opacity-25 [mask-image:linear-gradient(to_bottom,black,transparent)]" />
