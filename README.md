@@ -1,7 +1,7 @@
 <!-- Arquivo gerado pelo readme-kit. Não edite aqui: altere docs/readme/ e rode "readme-kit build". -->
 <div align="center">
 
-<img src="docs/assets/banner.svg" alt="Letraria: Obras e formas desenhadas com letras. github.com/diegonatalo/Letraria. Stack: Next.js 15, React 19, TypeScript 5, Tailwind CSS 4" width="100%" />
+<img src="docs/assets/banner.svg" alt="Letraria: Obras e formas desenhadas com letras. github.com/diegonatalo/Letraria. Stack: Next.js 16, React 19, TypeScript 6, Tailwind CSS 4" width="100%" />
 
 <br />
 
@@ -10,9 +10,9 @@
 
 <br />
 
-![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React_19-20232a?style=flat-square&logo=react&logoColor=61dafb)
-![TypeScript](https://img.shields.io/badge/TypeScript_5-3178c6?style=flat-square&logo=typescript&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript_6-3178c6?style=flat-square&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-06b6d4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![arte em canvas](https://img.shields.io/badge/arte_em_canvas-sem_bibliotecas-fcd34d?style=flat-square)
 ![Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-16a34a?style=flat-square)
@@ -88,7 +88,7 @@ Arte ASCII colorida e animada: pinturas que se revelam com zoom, formas que se d
 
 <div align="center">
 
-<img src="docs/assets/stack.svg" alt="Stack: Next.js 15, React 19, TypeScript 5, Tailwind CSS 4, arte em canvas · sem bibliotecas" width="100%" />
+<img src="docs/assets/stack.svg" alt="Stack: Next.js 16, React 19, TypeScript 6, Tailwind CSS 4, arte em canvas · sem bibliotecas" width="100%" />
 
 </div>
 
@@ -100,7 +100,7 @@ Arte ASCII colorida e animada: pinturas que se revelam com zoom, formas que se d
 
 </div>
 
-Requer [Node.js](https://nodejs.org) 18.18 ou superior e npm.
+Requer [Node.js](https://nodejs.org) 20.9 ou superior e npm.
 
 ```bash
 git clone https://github.com/diegonatalo/Letraria.git

@@ -1,4 +1,4 @@
-Requer [Node.js](https://nodejs.org) 18.18 ou superior e npm.
+Requer [Node.js](https://nodejs.org) 20.9 ou superior e npm.
 
 ```bash
 git clone https://github.com/diegonatalo/Letraria.git
