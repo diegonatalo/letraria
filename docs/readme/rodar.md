@@ -1,14 +1,14 @@
-Requer [Node.js](https://nodejs.org) 20.9 ou superior e npm.
+Requer [Node.js](https://nodejs.org) 20.9 ou superior e [pnpm](https://pnpm.io).
 
 ```bash
 git clone https://github.com/diegonatalo/letraria.git
 cd letraria
-npm install
-npm run dev     # http://localhost:3000
+pnpm install
+pnpm dev     # http://localhost:3000
 ```
 
 | Comando | O que faz |
 |---|---|
-| `npm run dev` | Servidor de desenvolvimento |
-| `npm run build` | Gera o build de produção |
-| `npm start` | Serve o build de produção |
+| `pnpm dev` | Servidor de desenvolvimento |
+| `pnpm build` | Gera o build de produção |
+| `pnpm start` | Serve o build de produção |
