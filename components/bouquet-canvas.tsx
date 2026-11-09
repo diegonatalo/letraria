@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { growthProgress, openProgress, swayGate, swayTerm, TIMELINE_END } from "@/lib/animation";
 import { clamp, FONT, RAMP } from "@/lib/ascii";
 import { type Engine, PointBuffer, poseStatics } from "@/lib/lily";
@@ -26,7 +26,11 @@ export default function BouquetCanvas<F extends { delay: number; sid: number }>(
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const startRef = useRef(0);
   const [done, setDone] = useState(false);
-  const [reduced, setReduced] = useState(false);
+  const reduced = useSyncExternalStore(
+    () => () => {},
+    () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    () => false,
+  );
 
   const replay = useCallback(() => {
     startRef.current = performance.now();
@@ -38,7 +42,6 @@ export default function BouquetCanvas<F extends { delay: number; sid: number }>(
     const canvas = canvasRef.current!;
     const ctx = canvas.getContext("2d")!;
     const motionOff = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    setReduced(motionOff);
     startRef.current = performance.now();
 
     const bq = engine.build();

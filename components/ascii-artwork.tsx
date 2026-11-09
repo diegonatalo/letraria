@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { FONT, RAMP, clamp } from "@/lib/ascii";
 import { createGlArt } from "@/lib/gl-art";
 
@@ -51,10 +51,12 @@ export default function AsciiArtwork({ src, thumb, nav, title, credit, about, so
   const [done, setDone] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const closeRef = useRef<HTMLButtonElement>(null);
-  const [canFullscreen, setCanFullscreen] = useState(false);
-
   // iPhone/Safari não oferece tela cheia em páginas: nesse caso o botão nem aparece.
-  useEffect(() => setCanFullscreen(!!document.fullscreenEnabled), []);
+  const canFullscreen = useSyncExternalStore(
+    () => () => {},
+    () => !!document.fullscreenEnabled,
+    () => false,
+  );
 
   useEffect(() => {
     if (!aboutOpen) return;
