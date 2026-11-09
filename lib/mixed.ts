@@ -2,8 +2,9 @@ import { clamp } from "./ascii";
 import { type BloomSpec, buildBloom, type PetalSpec, poseBloom } from "./bloom";
 import { buildHead, type HeadSpec, LEAVES, poseHead } from "./hydrangea";
 import {
-  type BouquetOf, buildFlower, buildStatics, CAM, type LilySpec, MID, mulberry32, PointBuffer, poseFlower, poseStatics, type RGB, type StaticAdd,
+  type BouquetOf, buildFlower, buildStatics, CAM, type LilySpec, MID, mulberry32, PointBuffer, poseFlower, poseStatics, type StaticAdd,
 } from "./lily";
+import type { RGB } from "@/types";
 
 /** Uma flor de qualquer tipo, com a pose guardada num fecho. */
 export type Mixed = {

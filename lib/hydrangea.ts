@@ -1,8 +1,9 @@
 import { smoothstep, SWAY_AMP } from "./animation";
 import { clamp } from "./ascii";
 import {
-  buildStatics, type BouquetOf, CAM, type LeafStyle, LIGHT, MID, mix, mulberry32, PointBuffer, poseStatics, type RGB, rotation,
+  buildStatics, type BouquetOf, CAM, type LeafStyle, LIGHT, MID, mix, mulberry32, PointBuffer, poseStatics, rotation,
 } from "./lily";
+import type { RGB } from "@/types";
 
 type Palette = {
   a: RGB;

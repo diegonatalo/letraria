@@ -1,6 +1,7 @@
 import { smoothstep, SWAY_AMP } from "./animation";
 import { clamp } from "./ascii";
-import { CAM, LIGHT, MID, mix, type PointBuffer, rotation, type RGB } from "./lily";
+import { CAM, LIGHT, MID, mix, type PointBuffer, rotation } from "./lily";
+import type { RGB } from "@/types";
 
 /** Flor genérica de pétalas (girassol, rosa): cada pétala tem a sua própria forma, abertura e cor. */
 export type PetalSpec = {

@@ -1,7 +1,6 @@
 import { smoothstep, SWAY_AMP } from "./animation";
 import { clamp } from "./ascii";
-
-export type RGB = readonly [number, number, number];
+import type { RGB } from "@/types";
 
 type Palette = {
   base: RGB; // cor da ponta da pétala
