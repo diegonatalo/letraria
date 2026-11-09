@@ -4,8 +4,6 @@ import AsciiArtwork from "@/components/ascii-artwork";
 import BackLink from "@/components/back-link";
 import { WORKS, getWork, workImage, workThumb } from "@/lib/works";
 
-export const dynamicParams = false;
-
 export function generateStaticParams() {
   return WORKS.map((w) => ({ slug: w.slug }));
 }
