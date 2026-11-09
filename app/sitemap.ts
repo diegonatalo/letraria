@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
+import { SITE_URL as BASE } from "@/lib/site";
 import { WORKS } from "@/lib/works";
-
-const BASE = "https://letraria.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
