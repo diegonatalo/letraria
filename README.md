@@ -1,12 +1,12 @@
 <!-- Arquivo gerado pelo readme-kit. Não edite aqui: altere docs/readme/ e rode "readme-kit build". -->
 <div align="center">
 
-<img src="docs/assets/banner.svg" alt="Letraria: Obras e formas desenhadas com letras. github.com/diegonatalo/Letraria. Stack: Next.js 16, React 19, TypeScript 6, Tailwind CSS 4" width="100%" />
+<img src="docs/assets/banner.svg" alt="Letraria: Obras e formas desenhadas com letras. github.com/diegonatalo/letraria. Stack: Next.js 16, React 19, TypeScript 6, Tailwind CSS 4" width="100%" />
 
 <br />
 
 <a href="https://letraria.vercel.app"><img src="docs/assets/btn-demo.svg" alt="Abrir o app ↗" height="46" /></a>
-<a href="https://github.com/diegonatalo/Letraria"><img src="docs/assets/btn-code.svg" alt="Código ↗" height="46" /></a>
+<a href="https://github.com/diegonatalo/letraria"><img src="docs/assets/btn-code.svg" alt="Código ↗" height="46" /></a>
 
 <br />
 
@@ -103,8 +103,8 @@ Arte ASCII colorida e animada: pinturas que se revelam com zoom, formas que se d
 Requer [Node.js](https://nodejs.org) 20.9 ou superior e npm.
 
 ```bash
-git clone https://github.com/diegonatalo/Letraria.git
-cd Letraria
+git clone https://github.com/diegonatalo/letraria.git
+cd letraria
 npm install
 npm run dev     # http://localhost:3000
 ```

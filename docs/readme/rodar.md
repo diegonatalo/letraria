@@ -1,8 +1,8 @@
 Requer [Node.js](https://nodejs.org) 20.9 ou superior e npm.
 
 ```bash
-git clone https://github.com/diegonatalo/Letraria.git
-cd Letraria
+git clone https://github.com/diegonatalo/letraria.git
+cd letraria
 npm install
 npm run dev     # http://localhost:3000
 ```
