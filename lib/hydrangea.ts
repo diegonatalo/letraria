@@ -104,7 +104,8 @@ export function buildHead(spec: HeadSpec, ytop: number, rnd: () => number, sid: 
     const dl = Math.hypot(dx, dy, dz);
     dx /= dl; dy /= dl; dz /= dl;
     // base tangente
-    let ax = 0, ay = 1, az = 0;
+    let ax = 0, ay = 1;
+    const az = 0;
     if (Math.abs(dy) > 0.9) { ax = 1; ay = 0; }
     let tx = dy * az - dz * ay, ty = dz * ax - dx * az, tz = dx * ay - dy * ax;
     const tl = Math.hypot(tx, ty, tz);

@@ -343,10 +343,11 @@ export function buildStatics(flowers: (Pick<Flower, "cx" | "cy" | "cz" | "yaw" |
     const k1 = Math.min(0.3, f.cy * 0.8);
     const k2 = Math.min(0.26, f.cy * 0.7);
     // stemBack: o talo sobe por trás das flores e só aparece na ponta, junto à flor
+    let p1t: Vec | undefined, p2t: Vec | undefined;
     if (f.thick) {
       // talo de margarida: sobe do feixe e entra por baixo da flor, em curva suave
-      var p1t: Vec = [p0[0] + (p3[0] - p0[0]) * 0.1, k1 * 1.2, p3[2] * 0.3];
-      var p2t: Vec = [p3[0], p3[1] - k2 * 1.1, p3[2] * 0.85];
+      p1t = [p0[0] + (p3[0] - p0[0]) * 0.1, k1 * 1.2, p3[2] * 0.3];
+      p2t = [p3[0], p3[1] - k2 * 1.1, p3[2] * 0.85];
     }
     const p1: Vec = f.thick ? p1t! : [p0[0] + (p3[0] - p0[0]) * 0.12, k1, f.stemBack ? -0.15 : p0[2] + (p3[2] - p0[2]) * 0.12];
     const p2: Vec = f.thick ? p2t! : [p3[0] - axis[0] * k2, p3[1] - axis[1] * k2, f.stemBack ? -0.12 : p3[2] - axis[2] * k2];
@@ -588,8 +589,8 @@ export function poseFlower(f: Flower, openIn: number, P: number, t: number, term
     if (k >= N) k = N - 1;
     const fr = vf - k;
     const o = p * (N + 1) + k;
-    let rad = RAD[o] + (RAD[o + 1] - RAD[o]) * fr;
-    let ax = AX[o] + (AX[o + 1] - AX[o]) * fr;
+    const rad = RAD[o] + (RAD[o + 1] - RAD[o]) * fr;
+    const ax = AX[o] + (AX[o + 1] - AX[o]) * fr;
     const lat = f.u[i] * f.w[i];
     const cup = 5 * lat * lat; // bordas levantadas
     const cd = CD[p], sd = SD[p];
