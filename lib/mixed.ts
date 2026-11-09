@@ -6,7 +6,7 @@ import {
 } from "./lily";
 
 /** Uma flor de qualquer tipo, com a pose guardada num fecho. */
-export interface Mixed {
+export type Mixed = {
   cx: number;
   cy: number;
   cz: number;
@@ -17,7 +17,7 @@ export interface Mixed {
   stemBack?: boolean;
   thick?: boolean;
   pose: (open: number, P: number, t: number, term: number, gate: number, out: PointBuffer) => void;
-}
+};
 
 const TAU = Math.PI * 2;
 
@@ -134,12 +134,12 @@ const lean = (x: number, y: number) => ({
 });
 const at = (x: number, y: number, zBoost = 0) => ({ x, y, z: domeZ(x, y) + zBoost, ...lean(x, y) });
 
-interface Focal {
+type Focal = {
   x: number;
   y: number;
   z: number;
   r: number; // raio aproximado na tela (unidades do modelo): mantém as margaridas afastadas
-}
+};
 
 const SUN = at(0.0, 0.88);
 const ROSE = at(0.0, 0.6);

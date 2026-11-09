@@ -4,10 +4,10 @@ import {
   buildStatics, type BouquetOf, CAM, type LeafStyle, LIGHT, MID, mix, mulberry32, PointBuffer, poseStatics, type RGB, rotation,
 } from "./lily";
 
-interface Palette {
+type Palette = {
   a: RGB;
   b: RGB;
-}
+};
 
 const PALETTES = {
   blue: { a: [74, 118, 236], b: [140, 176, 250] },
@@ -20,9 +20,9 @@ const PALETTES = {
 } satisfies Record<string, Palette>;
 
 // Cabeças esféricas (mopheads): posição, raio relativo e pose.
-export interface HeadSpec {
+export type HeadSpec = {
   x: number; y: number; z: number; size: number; yaw: number; pitch: number; roll: number; flat: number; pal: keyof typeof PALETTES;
-}
+};
 
 const SPECS: HeadSpec[] = [
   { x: 0.0, y: 0.82, z: 0.05, size: 1.1, yaw: 0.0, pitch: 0.3, roll: 0.2, flat: 1.0, pal: "cobalt" },
@@ -48,7 +48,7 @@ export const LEAVES: LeafStyle = {
   attach: [0.3, 0.3], tone: 0.3, lumBoost: 0.12,
 };
 
-export interface Head {
+export type Head = {
   cx: number;
   cy: number;
   cz: number;
@@ -78,7 +78,7 @@ export interface Head {
   g: Uint8Array;
   b: Uint8Array;
   pl: Float32Array;
-}
+};
 
 const hash2 = (a: number, b: number) => {
   const s = Math.sin(a * 127.1 + b * 311.7) * 43758.5453;

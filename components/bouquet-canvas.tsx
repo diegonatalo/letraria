@@ -10,14 +10,14 @@ const RADIUS = 80; // raio de repulsão do mouse (px)
 const STARS = 140;
 const GLYPHS = Array.from({ length: 128 }, (_, i) => String.fromCharCode(i));
 
-interface Props<F extends { delay: number; sid: number }> {
+type Props<F extends { delay: number; sid: number }> = {
   engine: Engine<F>;
   title: string;
   subtitle: string;
   label: string;
   mouse?: boolean; // letras fogem do cursor
   grid?: { div: number; min: number; max: number }; // tamanho da fonte: altura / div, entre min e max (px)
-}
+};
 
 const DEFAULT_GRID = { div: 170, min: 5, max: 8 };
 

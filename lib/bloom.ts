@@ -3,7 +3,7 @@ import { clamp } from "./ascii";
 import { CAM, LIGHT, MID, mix, type PointBuffer, rotation, type RGB } from "./lily";
 
 /** Flor genérica de pétalas (girassol, rosa): cada pétala tem a sua própria forma, abertura e cor. */
-export interface PetalSpec {
+export type PetalSpec = {
   az: number; // azimute (rad)
   len: number;
   wid: number; // meia-largura
@@ -21,26 +21,26 @@ export interface PetalSpec {
   tip: RGB;
   rib: number; // força da nervura clara
   dark: number; // escurece o brilho (pétalas internas)
-}
+};
 
-export interface DiscSpec {
+export type DiscSpec = {
   radius: number;
   count: number;
   inner: RGB;
   mid: RGB;
   rim: RGB;
-}
+};
 
-export interface BloomSpec {
+export type BloomSpec = {
   x: number; y: number; z: number; size: number; yaw: number; pitch: number; roll: number;
   petals: PetalSpec[];
   round: boolean;
   cup: number; // bordas levantadas
   sp?: number; // espaçamento das amostras (menor = mais denso)
   disc?: DiscSpec;
-}
+};
 
-export interface Bloom {
+export type Bloom = {
   cx: number; cy: number; cz: number; size: number; yaw: number; pitch: number; roll: number;
   h: number; gKey: number; delay: number; phase: number; sid: number;
   cup: number;
@@ -53,7 +53,7 @@ export interface Bloom {
   dn: number;
   dx: Float32Array; dy: Float32Array; dz: Float32Array;
   dr: Uint8Array; dg: Uint8Array; db: Uint8Array; dl: Float32Array;
-}
+};
 
 const SP = 0.004;
 const N = 12;

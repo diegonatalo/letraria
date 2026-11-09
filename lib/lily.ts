@@ -3,11 +3,11 @@ import { clamp } from "./ascii";
 
 export type RGB = readonly [number, number, number];
 
-interface Palette {
+type Palette = {
   base: RGB; // cor da ponta da pétala
   center: RGB; // cor perto do miolo
   spots: boolean;
-}
+};
 
 export const PALETTES = {
   red: { base: [208, 22, 38], center: [255, 190, 80], spots: true },
@@ -20,12 +20,12 @@ export const PALETTES = {
 } satisfies Record<string, Palette>;
 
 // Posição (x, y, z do modelo; y para cima, z para o espectador) e pose de cada lírio.
-export interface LilySpec {
+export type LilySpec = {
   x: number; y: number; z: number; size: number; yaw: number; pitch: number; roll: number; pal: keyof typeof PALETTES;
   ls?: number; // comprimento das pétalas (1 = lírio)
   maxOpen?: number; // limite da abertura (tulipa fica em taça)
   round?: boolean; // pétala de ponta arredondada
-}
+};
 
 const SPECS: LilySpec[] = [
   { x: 0.02, y: 0.88, z: 0.05, size: 1.0, yaw: 0.05, pitch: 0.45, roll: 0.2, pal: "red" },
@@ -56,7 +56,7 @@ const RIB: RGB = [255, 238, 214];
 const G0: RGB = [46, 125, 50];
 const G1: RGB = [156, 204, 101];
 
-export interface Flower {
+export type Flower = {
   cx: number;
   cy: number;
   cz: number;
@@ -89,9 +89,9 @@ export interface Flower {
   mg: Uint8Array;
   mb: Uint8Array;
   mp: Float32Array;
-}
+};
 
-export interface Statics {
+export type Statics = {
   n: number;
   x: Float32Array;
   y: Float32Array;
@@ -105,25 +105,25 @@ export interface Statics {
   lum: Float32Array;
   ch: Uint8Array; // 0 = caractere pelo brilho; senão o código do caractere
   ph: Float32Array;
-}
+};
 
-export interface BouquetOf<F> {
+export type BouquetOf<F> = {
   flowers: F[];
   statics: Statics;
   stems: number; // talos + o "talo" da touceira de folhas
   capacity: number;
   bounds: { xmin: number; xmax: number; ymin: number; ymax: number };
-}
+};
 export type Bouquet = BouquetOf<Flower>;
 
 /** O que o componente precisa para animar um buquê: construir e posar uma flor. */
-export interface Engine<F extends { delay: number; sid: number }> {
+export type Engine<F extends { delay: number; sid: number }> = {
   build: () => BouquetOf<F>;
   poseFlower: (f: F, open: number, P: number, t: number, term: number, gate: number, out: PointBuffer) => void;
-}
+};
 
 /** Forma e quantidade das folhas. */
-export interface LeafStyle {
+export type LeafStyle = {
   stem: number; // folhas ao longo dos talos
   base: number; // folhas da touceira
   stemLen: [number, number]; // [mín, variação]
@@ -139,7 +139,7 @@ export interface LeafStyle {
   tone?: number; // clareia o verde
   lumBoost?: number;
   stemPool?: number; // só os N primeiros talos recebem folhas
-}
+};
 export const LILY_LEAVES: LeafStyle = {
   stem: 32, base: 22, stemLen: [0.25, 0.22], stemW: [0.03, 0.012], baseLen: [0.42, 0.28], baseW: [0.036, 0.014],
   stemLean: [0.2, 0.25], baseLean: [0.3, 0.3], droop: [0.05, 0.15], ovate: false, spacing: 0.0042,
