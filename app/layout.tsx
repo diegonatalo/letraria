@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   title: { default: "Letraria", template: "%s" },
   description: DESCRIPTION,
   applicationName: "Letraria",
-  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: SITE_URL,

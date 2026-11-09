@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import AsciiLogo from "@/components/ascii-logo";
 import AsciiRain from "@/components/ascii-rain";
@@ -108,6 +109,8 @@ function Corners({ tone = "text-gold/70" }: { tone?: string }) {
     </>
   );
 }
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 export default function Gallery() {
   return (
