@@ -1,12 +1,12 @@
 "use client";
 
-import BouquetCanvas from "@/components/bouquet-canvas";
+import { BouquetCanvas } from "@/components/bouquet-canvas";
 import { buildMixed, poseMixed } from "@/lib/mixed";
 
 const GRID = { div: 190, min: 4, max: 4 };
 const ENGINE = { build: buildMixed, poseFlower: poseMixed };
 
-export default function HydrangeaBouquet() {
+export const HydrangeaBouquet = () => {
   return (
     <BouquetCanvas
       engine={ENGINE}
@@ -17,4 +17,4 @@ export default function HydrangeaBouquet() {
       label="Um buquê de hortênsia, girassol, rosa, tulipa, lírio e margaridas desenhado com caracteres coloridos"
     />
   );
-}
+};

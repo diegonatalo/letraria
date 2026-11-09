@@ -1,11 +1,11 @@
 "use client";
 
-import BouquetCanvas from "@/components/bouquet-canvas";
+import { BouquetCanvas } from "@/components/bouquet-canvas";
 import { buildBouquet, poseFlower } from "@/lib/lily";
 
 const ENGINE = { build: buildBouquet, poseFlower };
 
-export default function LilyBouquet() {
+export const LilyBouquet = () => {
   return (
     <BouquetCanvas
       engine={ENGINE}
@@ -14,4 +14,4 @@ export default function LilyBouquet() {
       label="Um buquê de lírios desenhado com caracteres coloridos"
     />
   );
-}
+};

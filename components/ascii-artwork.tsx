@@ -40,7 +40,7 @@ type Props = {
   source?: string;
 };
 
-export default function AsciiArtwork({ src, thumb, nav, title, credit, about, source }: Props) {
+export const AsciiArtwork = ({ src, thumb, nav, title, credit, about, source }: Props) => {
   const dimsRef = useRef({ w: 1, h: 1 });
   const boxRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -427,4 +427,4 @@ export default function AsciiArtwork({ src, thumb, nav, title, credit, about, so
       )}
     </div>
   );
-}
+};

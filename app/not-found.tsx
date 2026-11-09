@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import AsciiRain from "@/components/ascii-rain";
+import { AsciiRain } from "@/components/ascii-rain";
 
 export const metadata: Metadata = {
   title: "Página não encontrada · Letraria",

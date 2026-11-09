@@ -21,7 +21,7 @@ interface Props<F extends { delay: number; sid: number }> {
 
 const DEFAULT_GRID = { div: 170, min: 5, max: 8 };
 
-export default function BouquetCanvas<F extends { delay: number; sid: number }>({ engine, title, subtitle, label, mouse: mouseFx = true, grid = DEFAULT_GRID }: Props<F>) {
+export const BouquetCanvas = <F extends { delay: number; sid: number }>({ engine, title, subtitle, label, mouse: mouseFx = true, grid = DEFAULT_GRID }: Props<F>) => {
   const boxRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const startRef = useRef(0);
@@ -319,4 +319,4 @@ export default function BouquetCanvas<F extends { delay: number; sid: number }>(
       </footer>
     </div>
   );
-}
+};

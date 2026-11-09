@@ -19,7 +19,7 @@ const LOGO = [0, 1, 2, 3, 4]
   )
   .join("\n");
 
-export default function AsciiLogo({ className = "" }: { className?: string }) {
+export const AsciiLogo = ({ className = "" }: { className?: string }) => {
   return (
     <h1 aria-label="Letraria" className={className}>
       <pre
@@ -30,4 +30,4 @@ export default function AsciiLogo({ className = "" }: { className?: string }) {
       </pre>
     </h1>
   );
-}
+};

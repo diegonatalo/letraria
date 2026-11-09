@@ -5,7 +5,7 @@ const TONES = {
   rose: "text-rose-200/80 hover:border-rose-300/60 hover:text-rose-100",
 };
 
-export default function BackLink({ tone = "gold" }: { tone?: keyof typeof TONES }) {
+export const BackLink = ({ tone = "gold" }: { tone?: keyof typeof TONES }) => {
   return (
     <Link
       href="/"
@@ -14,4 +14,4 @@ export default function BackLink({ tone = "gold" }: { tone?: keyof typeof TONES 
       <span aria-hidden>←</span> Galeria
     </Link>
   );
-}
+};

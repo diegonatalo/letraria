@@ -68,7 +68,7 @@ const red = (t: number): [number, number, number] => {
   return [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k, a[2] + (b[2] - a[2]) * k];
 };
 
-export default function AsciiHeart() {
+export const AsciiHeart = () => {
   const boxRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const startRef = useRef(0);
@@ -375,4 +375,4 @@ export default function AsciiHeart() {
       </footer>
     </div>
   );
-}
+};

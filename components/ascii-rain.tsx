@@ -7,7 +7,7 @@ const CELL = 16;
 const GLYPHS = "LETRARIA·TEAMO♥*+:.";
 
 /** Chuva de letras bem discreta, só para dar vida ao fundo da galeria. */
-export default function AsciiRain({ className = "" }: { className?: string }) {
+export const AsciiRain = ({ className = "" }: { className?: string }) => {
   const ref = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -59,4 +59,4 @@ export default function AsciiRain({ className = "" }: { className?: string }) {
   }, []);
 
   return <canvas ref={ref} aria-hidden className={className} />;
-}
+};

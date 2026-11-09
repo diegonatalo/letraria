@@ -1,5 +1,5 @@
-import BackLink from "@/components/back-link";
-import HydrangeaBouquet from "@/components/hydrangea-bouquet";
+import { BackLink } from "@/components/back-link";
+import { HydrangeaBouquet } from "@/components/hydrangea-bouquet";
 
 const TITLE = "Buquê de flores · Letraria";
 const DESCRIPTION = "Um buquê de hortênsia, girassol, rosa, tulipa, lírio e margaridas coloridas que cresce e floresce, desenhado só com caracteres coloridos.";

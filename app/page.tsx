@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import AsciiLogo from "@/components/ascii-logo";
-import AsciiRain from "@/components/ascii-rain";
-import AsciiThumb from "@/components/ascii-thumb";
+import { AsciiLogo } from "@/components/ascii-logo";
+import { AsciiRain } from "@/components/ascii-rain";
+import { AsciiThumb } from "@/components/ascii-thumb";
 import { WORKS, workThumb } from "@/lib/works";
 
 // Miniatura em texto do coração, gerada na hora da renderização.
@@ -90,7 +90,7 @@ const CARD =
   "group relative flex h-full flex-col overflow-hidden rounded-xl border border-gold/15 bg-night-2/80 transition duration-300 hover:-translate-y-1 hover:border-gold/60 hover:shadow-[0_8px_40px_-12px_rgba(245,199,106,0.35)]";
 
 /** Cantos em ASCII, como uma moldura em miniatura. */
-function Corners({ tone = "text-gold/70" }: { tone?: string }) {
+const Corners = ({ tone = "text-gold/70" }: { tone?: string }) => {
   const base = `pointer-events-none absolute z-10 font-mono text-[11px] font-bold leading-none ${tone}`;
   return (
     <>
@@ -108,7 +108,7 @@ function Corners({ tone = "text-gold/70" }: { tone?: string }) {
       </span>
     </>
   );
-}
+};
 
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 

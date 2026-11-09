@@ -1,5 +1,5 @@
-import BackLink from "@/components/back-link";
-import LilyBouquet from "@/components/lily-bouquet";
+import { BackLink } from "@/components/back-link";
+import { LilyBouquet } from "@/components/lily-bouquet";
 
 const TITLE = "Lírios · Letraria";
 const DESCRIPTION = "Um buquê de lírios que cresce e se abre, desenhado só com caracteres coloridos. Passe o mouse para afastar as letras.";

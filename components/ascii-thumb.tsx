@@ -6,7 +6,7 @@ import { FONT, RAMP, clamp } from "@/lib/ascii";
 const COLS = 72;
 
 /** Miniatura em ASCII: desenha a pintura uma vez e, com o mouse em cima do cartão, faz ela cintilar. */
-export default function AsciiThumb({ src }: { src: string }) {
+export const AsciiThumb = ({ src }: { src: string }) => {
   const boxRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -150,4 +150,4 @@ export default function AsciiThumb({ src }: { src: string }) {
       <canvas ref={canvasRef} aria-hidden className="block" />
     </div>
   );
-}
+};
