@@ -115,6 +115,16 @@ pnpm dev     # http://localhost:3000
 | `pnpm build` | Gera o build de produção |
 | `pnpm start` | Serve o build de produção |
 
+### 🧪 Testes
+
+```bash
+pnpm test
+```
+
+Usa [Vitest](https://vitest.dev). Os testes cobrem a lógica pura de `lib/`: easings e linha do tempo da animação, escolha do caractere pelo brilho, o gerador pseudoaleatório, o buffer de pontos, os buquês e a lista de obras. O canvas e o WebGL ainda não têm testes.
+
+Para reexecutar ao salvar: `pnpm test:watch`.
+
 <br />
 
 <div align="center">
@@ -190,7 +200,7 @@ O projeto foi pensado para a [Vercel](https://vercel.com) e não precisa de conf
 - [ ] Mais obras e formas na galeria.
 - [ ] Gerar um `favicon.ico` para leitores antigos (hoje só existe o SVG).
 - [ ] Testar o desempenho em celulares mais simples (o zoom agora roda na GPU, mas só foi medido em um computador).
-- [ ] Testes automatizados. Hoje não há nenhum.
+- [ ] Testes do canvas e do WebGL (hoje os testes cobrem só a lógica de `lib/`).
 
 ### 📄 Créditos e licença
 
