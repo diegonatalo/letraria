@@ -51,6 +51,7 @@ export const AsciiArtwork = ({ src, thumb, nav, title, credit, about, source }: 
   const [done, setDone] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const closeRef = useRef<HTMLButtonElement>(null);
+  const aboutRef = useRef<HTMLElement>(null);
   // iPhone/Safari não oferece tela cheia em páginas: nesse caso o botão nem aparece.
   const canFullscreen = useSyncExternalStore(
     () => () => {},
@@ -58,12 +59,31 @@ export const AsciiArtwork = ({ src, thumb, nav, title, credit, about, source }: 
     () => false,
   );
 
+  // O painel "Sobre" prende o foco: Tab circula dentro dele, Esc fecha e o foco volta ao botão que o abriu.
   useEffect(() => {
     if (!aboutOpen) return;
+    const opener = document.activeElement as HTMLElement | null;
     closeRef.current?.focus();
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setAboutOpen(false);
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") return setAboutOpen(false);
+      if (e.key !== "Tab") return;
+      const items = aboutRef.current?.querySelectorAll<HTMLElement>("a[href], button:not([disabled])");
+      if (!items || items.length === 0) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      opener?.focus();
+    };
   }, [aboutOpen]);
 
   // Repetir pula a introdução: a moldura já está pronta, só o zoom recomeça.
@@ -373,6 +393,7 @@ export const AsciiArtwork = ({ src, thumb, nav, title, credit, about, source }: 
           onClick={() => setAboutOpen(false)}
         >
           <aside
+            ref={aboutRef}
             role="dialog"
             aria-modal="true"
             aria-label={`Sobre ${title}`}
