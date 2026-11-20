@@ -7,8 +7,8 @@ const DESCRIPTION = "Um coração que se desenha em contorno e se preenche com p
 export const metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/coracao" },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: "/coracao" },
+  alternates: { canonical: "/app/coracao" },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "/app/coracao" },
   twitter: { title: TITLE, description: DESCRIPTION },
 };
 

@@ -7,8 +7,8 @@ const DESCRIPTION = "Um buquê de hortênsia, girassol, rosa, tulipa, lírio e m
 export const metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/buque" },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: "/buque" },
+  alternates: { canonical: "/app/buque" },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "/app/buque" },
   twitter: { title: TITLE, description: DESCRIPTION },
 };
 

@@ -6,6 +6,9 @@ export const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://letraria.vercel.app"
 ).replace(/\/+$/, "");
 
+/** Repositório público, no rodapé. */
+export const SOURCE_URL = "https://github.com/diegonatalo/letraria";
+
 export const SITE_NAME = "Letraria";
 export const SITE_DESCRIPTION =
   "Obras e formas desenhadas com letras: arte ASCII colorida e animada.";

@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title,
     description,
-    alternates: { canonical: `/${work.slug}` },
-    openGraph: { title, description, url: `/${work.slug}` },
+    alternates: { canonical: `/app/${work.slug}` },
+    openGraph: { title, description, url: `/app/${work.slug}` },
     twitter: { title, description },
   };
 }
@@ -42,8 +42,8 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
         about={work.about}
         source={work.source}
         nav={{
-          prev: { href: `/${prev.slug}`, title: prev.title },
-          next: { href: `/${next.slug}`, title: next.title },
+          prev: { href: `/app/${prev.slug}`, title: prev.title },
+          next: { href: `/app/${next.slug}`, title: next.title },
         }}
       />
     </main>
