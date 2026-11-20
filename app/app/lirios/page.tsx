@@ -7,8 +7,8 @@ const DESCRIPTION = "Um buquê de lírios que cresce e se abre, desenhado só co
 export const metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/lirios" },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: "/lirios" },
+  alternates: { canonical: "/app/lirios" },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "/app/lirios" },
   twitter: { title: TITLE, description: DESCRIPTION },
 };
 

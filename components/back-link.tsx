@@ -8,7 +8,7 @@ const TONES = {
 export const BackLink = ({ tone = "gold" }: { tone?: keyof typeof TONES }) => {
   return (
     <Link
-      href="/"
+      href="/app"
       className={`absolute left-3 top-3 z-10 inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/40 px-3 py-1 font-mono text-xs backdrop-blur transition ${TONES[tone]}`}
     >
       <span aria-hidden>←</span> Galeria

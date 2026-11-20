@@ -1,8 +1,9 @@
 ```text
 app/
-├── page.tsx                galeria (página inicial)
-├── [slug]/                 uma página por obra (/noite-estrelada, /o-beijo, ...)
-├── coracao/                página do coração de palavras
+├── page.tsx                landing (página inicial)
+├── app/page.tsx            galeria (/app)
+├── app/[slug]/             uma página por obra (/app/noite-estrelada, ...); os endereços antigos redirecionam
+├── app/coracao/            página do coração de palavras (também lirios/ e buque/)
 ├── layout.tsx              metadados, Open Graph e Twitter
 ├── opengraph-image.jpg     imagem de compartilhamento (1200×630, abaixo de 300 KB para o WhatsApp)
 ├── icon.svg                favicon
