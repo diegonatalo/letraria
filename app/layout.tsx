@@ -3,7 +3,13 @@ import { Fraunces, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
-const display = Fraunces({ subsets: ["latin"], variable: "--nf-display", display: "swap" });
+const display = Fraunces({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  axes: ["opsz"],
+  variable: "--nf-display",
+  display: "swap",
+});
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--nf-mono", display: "swap" });
 
 export const metadata: Metadata = {

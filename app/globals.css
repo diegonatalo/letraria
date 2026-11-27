@@ -8,6 +8,9 @@
   --color-gold-light: #fde9b0;
   --color-gold-dark: #b9822a;
   --color-ruby: #e11d48;
+  --color-paper: #eee7d7;
+  --color-stone: #a39e92;
+  --color-panel: #0a0b12;
   --font-display: var(--nf-display), ui-serif, Georgia, serif;
   --font-mono: var(--nf-mono), ui-monospace, "Cascadia Mono", Consolas, monospace;
 }
